@@ -14,7 +14,7 @@ This client currently only support Android. To be able to work with Android you 
 - Latest version of ADB installed on your machine
 - (optional) Latest version of Android Studio installed on your local machine
 
-There are enough tutorials on the internet that will explain yoy how to achieve the above.
+There are enough tutorials on the internet that will explain you how to achieve the above.
 
 ## Features
 - Connect to a **new** VUSB session through the UI
