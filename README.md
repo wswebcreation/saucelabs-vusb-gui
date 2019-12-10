@@ -36,7 +36,7 @@ You can adjust the server settings by scrolling down.
 When all *Settings* have been stored the *Device Catalog* can be used (if you didn't store the data properly clicking on the *Device Catalog* will automatically bring you back to the *Settings*).
 You will see a screen like this.
 
-![Device Catalog](./assets/server-not-running.jpg)
+![Device Catalog](./assets/device-searchbar.jpg)
 
 You can't select a device because you first need to start the server, this can be done by clicking on the play-button. The screen will update and look like this.
 
@@ -46,6 +46,10 @@ To see the logs of the server click on the green icon, the logs can also be clea
 The monitor can be closed by clicking on the cross.
 
 ![Server monitor](./assets/server-monitor.jpg)
+
+You can easily search devices. Each word will be seen as an argument and the device needs to match all arguments.
+
+![Search devices](./assets/device-search-results.jpg)
 
 Connect to a device by clicking on the switch. After a few minutes the switch will change from `Connecting` to `Connected` and the device will get an `In Use` badge, see below.
 
@@ -66,8 +70,8 @@ This will give you the opportunity to connect the device to for example Chrome a
 
 ## TODO:
 - [ ] Verify that the device connection is really killed
-- [ ] Sort the devices, they are now only shown based on how we get them with the API call
-- [ ] Add a generic notification/error handler
+- [x] Sort the devices, they are now only shown based on how we get them with the API call
+- [x] Add a generic notification/error handler
 - [ ] Implement proxy for getting the data from the API through a proxy
 - [ ] Some other stuff that I don't know now =)
 
