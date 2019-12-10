@@ -1,8 +1,8 @@
 # saucelabs-vusb-gui
 This project is an Open Source Virtual USB GUI for Sauce Labs Virtual USB. It provides a simple GUI to start an Android* VUSB session with only a few clicks.
 
+> **NOTES:**<br />
 > - iOS is in an early access mode, contact your Sauce Labs Customer Success Manager to learn more
-> ***NOTES:**<br />
 > - Sauce Labs Virtual USB will only work if you are having Private devices in your Sauce Labs Real Device cloud
 > - Windows is currently **not** supported!
 
@@ -14,7 +14,7 @@ This client currently only support Android. To be able to work with Android you 
 - Latest version of ADB installed on your machine
 - (optional) Latest version of Android Studio installed on your local machine
 
-There are enough tutorials on the internet that will explain yoy how to achieve the above.
+There are enough tutorials on the internet that will explain you how to achieve the above.
 
 ## Features
 - Connect to a **new** VUSB session through the UI
