@@ -6,6 +6,18 @@ This project is an Open Source Virtual USB GUI for Sauce Labs Virtual USB. It pr
 > - Sauce Labs Virtual USB will only work if you are having Private devices in your Sauce Labs Real Device cloud
 > - There is currently a **beta out for Windows**, please check [this](https://github.com/wswebcreation/saucelabs-vusb-gui/releases/tag/0.1.2.1-win-beta) release.
 
+# Table of contents
+
+1. [How to use](#how-to-use)
+    - [Prerequisites](#prerequisites)
+1. [Features](#features)
+    - [Installing](#installing)
+1. [TODO](#todo)
+1. [Known VUSB GUI issues](#known-vusb-gui-issues)
+1. [FAQ](#faq)
+1. [Credits](#credits)
+
+
 ## How to use
 ### Prerequisites
 This client currently only support Android. To be able to work with Android you need to have the following on your local machine:
@@ -75,7 +87,7 @@ This will give you the opportunity to connect the device to for example Chrome a
 - [ ] Implement proxy for getting the data from the API through a proxy
 - [ ] Some other stuff that I don't know now =)
 
-## Known VUSB GUI issues:
+## Known VUSB GUI issues
 - A VUSB connection will only stay alive for max 5 minutes through the GUI
 - When you close a Live Testing session the VUSB session is also closed.
 
