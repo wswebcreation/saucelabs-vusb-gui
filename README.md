@@ -4,7 +4,7 @@ This project is an Open Source Virtual USB GUI for Sauce Labs Virtual USB. It pr
 > **NOTES:**<br />
 > - iOS is in an early access mode, contact your Sauce Labs Customer Success Manager to learn more
 > - Sauce Labs Virtual USB will only work if you are having Private devices in your Sauce Labs Real Device cloud
-> - Windows is currently **not** supported!
+> - There is currently a **beta out for Windows**, please check [this](https://github.com/wswebcreation/saucelabs-vusb-gui/releases/tag/0.1.2.1-win-beta) release.
 
 ## How to use
 ### Prerequisites
@@ -82,10 +82,7 @@ Please make sure you have private devices assigned to your account. If you still
 ### Why can't I see iOS devices, even though I have private iOS devices assigned to my account
 Virtual USB for iOS is in an early access mode. This app doesn't support that yet. Please contact your Sauce Labs Customer Success Manager to learn more about VUSB for iOS.
 
-### Can I use this app on a Windows machine?
-No, the current Virtual USB runner only supports Linux and Mac, see [here](https://wiki.saucelabs.com/display/DOCS/Android+Virtual+USB+Changelog) for the latest runners if you want to use them without this GUI.
-
-### I'm getting al kinds of errors in my home screen telling me that `JAVA_HOME, `ANDROID_HOME` and or `ADB` are not working
+### I'm getting al kinds of errors in my home screen telling me that `JAVA_HOME`, `ANDROID_HOME` and or `ADB` are not working
 Make sure you have set up your environment for using Android on your local machine. Use Google as your biggest friend.
 
 ### Is this product build and maintained by Sauce Labs?
