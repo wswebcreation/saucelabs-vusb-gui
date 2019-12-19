@@ -75,6 +75,10 @@ This will give you the opportunity to connect the device to for example Chrome a
 - [ ] Implement proxy for getting the data from the API through a proxy
 - [ ] Some other stuff that I don't know now =)
 
+## Known VUSB GUI issues:
+- A VUSB connection will only stay alive for max 5 minutes through the GUI
+- When you close a Live Testing session the VUSB session is also closed.
+
 ## FAQ
 ### I'm not seeing any devices in the device catalog
 Please make sure you have private devices assigned to your account. If you still can't see them file an issue [here](https://github.com/wswebcreation/saucelabs-vusb-gui/issues).
