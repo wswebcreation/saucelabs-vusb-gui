@@ -81,7 +81,7 @@ This will give you the opportunity to connect the device to for example Chrome a
 ![Debug Chrome](./assets/device-connect-to-chrome.jpg) 
 
 ## TODO:
-- [ ] Verify that the device connection is really killed
+- [x] Verify that the device connection is really killed
 - [x] Sort the devices, they are now only shown based on how we get them with the API call
 - [x] Add a generic notification/error handler
 - [ ] Implement proxy for getting the data from the API through a proxy
