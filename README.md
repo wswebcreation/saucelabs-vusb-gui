@@ -129,6 +129,12 @@ You can fix this by going to `System Preferences > Security & Privacy` and click
 
 ![Open Anyway](./assets/mac-blocked.png) 
 
+You may still fail opening Sauce vUSB on Big Sur after the previous step. You may have to open a terminal and with the sudo command run the following command:
+
+     xattr -rd com.apple.quarantine /Applications/SauceVusbClient.app 
+
+Once done, this should let you open the Sauce vUSB GUI without any further issues.
+
 ### XCODE/Safari doesn't recognise my just connected iOS device over vUSB
 You'll need to exit Xcode/Safari before connecting to an iOS Virtual USB session (or relaunch it after connecting). 
 Otherwise, the device won't show up.
