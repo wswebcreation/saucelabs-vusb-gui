@@ -46,11 +46,11 @@ Download the latest version of the client from [here](https://github.com/wswebcr
 After you have installed the client check the *Home* screen if there are no environmental issues, see below, 
 if you have them please fix them and restart the app.
 
-![Home](./assets/home.png)
+![Home](docs/assets/home.png)
 
 Then go to *Settings* and fill the needed data. The first time you will see a screen like below
 
-![Settings](./assets/settings.png)
+![Settings](docs/assets/settings.png)
 
 You can adjust the server settings by scrolling down.
 
@@ -61,30 +61,30 @@ When all *Settings* have been stored the *Device Catalog* can be used (if you di
 the *Device Catalog* will automatically bring you back to the *Settings*).
 You will see a screen like this.
 
-![Device Catalog](./assets/device-searchbar.png)
+![Device Catalog](docs/assets/device-searchbar.png)
 
 You can't select a device because you first need to start the server, this can be done by clicking on the play-button. 
 The screen will update and look like this.
 
-![Server running](./assets/server-running.png).
+![Server running](docs/assets/server-running.png).
 
 To see the logs of the server click on the green icon, the logs can also be cleared like you normally would do with a terminal. 
 The monitor can be closed by clicking on the cross.
 
-![Server monitor](./assets/server-monitor.png)
+![Server monitor](docs/assets/server-monitor.png)
 
 You can easily search devices. Each word will be seen as an argument and the device needs to match all arguments.
 
-![Search devices](./assets/device-search-results.png)
+![Search devices](docs/assets/device-search-results.png)
 
 Connect to a device by clicking on the switch. After a few minutes the switch will change from `Connecting` to `Connected`,
 see below.
 
-![Device connected](./assets/device-connected.png)
+![Device connected](docs/assets/device-connected.png)
 
 When you now click on *LAUNCH LIVE TEST* a new window will be opened and a new fresh VUSB session will be started.
 
-![VUSB session started](./assets/device-open-session.png)
+![VUSB session started](docs/assets/device-open-session.png)
 
 The device needs to be connected to ADB to use the full power of Sauce Labs Virtual USB. You can do that automatically, 
 Go to `Settings > AUTOMATICALLY CONNECT TO ADB`, or follow he steps below.
@@ -97,7 +97,7 @@ In this case the device needs to be connected to port `7001` which leads to this
 
 This will give you the opportunity to connect the device to for example Chrome and debug the website like this.
 
-![Debug Chrome](./assets/device-connect-to-chrome.png) 
+![Debug Chrome](docs/assets/device-connect-to-chrome.png) 
 
 ## Known vUSB GUI issues
 - When you close a Live Testing session the VUSB session is also closed.
@@ -127,7 +127,7 @@ downloaded from an external source and could be malicious software.
 
 You can fix this by going to `System Preferences > Security & Privacy` and click on `Open Anyway`, see below
 
-![Open Anyway](./assets/mac-blocked.png) 
+![Open Anyway](docs/assets/mac-blocked.png) 
 
 You may still fail opening Sauce vUSB on Big Sur after the previous step. You may have to open a terminal and with the sudo command run the following command:
 
