@@ -103,13 +103,27 @@ This will give you the opportunity to connect the device to for example Chrome a
 - When you close a Live Testing session the VUSB session is also closed.
 
 ## FAQ
+- [I'm not seeing any devices in the device catalog](#im-not-seeing-any-devices-in-the-device-catalog)
+- [Why can't I see iOS devices, even though I have private iOS devices assigned to my account](#why-cant-i-see-ios-devices-even-though-i-have-private-ios-devices-assigned-to-my-account)
+- [I'm getting al kinds of errors in my home screen telling me that `JAVA_HOME`, `ANDROID_HOME` and or `ADB` are not working](#im-getting-al-kinds-of-errors-in-my-home-screen-telling-me-that-java_home-android_home-and-or-adb-are-not-working)
+- [Is this product build and maintained by Sauce Labs?](#is-this-product-build-and-maintained-by-sauce-labs)
+- [Why is the source code not provided](#why-is-the-source-code-not-provided)
+- [Cannot open Sauce vUSB app on Big Sur](#cannot-open-sauce-vusb-app-on-big-sur)
+- [Cannot open Sauce vUSB app because it's "malicious software"](#cannot-open-sauce-vusb-app-because-its-malicious-software)
+- [XCODE/Safari doesn't recognise my just connected iOS device over vUSB](#xcodesafari-doesnt-recognise-my-just-connected-ios-device-over-vusb)
+
 ### I'm not seeing any devices in the device catalog
 Please make sure you have private devices assigned to your account. If you still can't see them file an issue 
 [here](https://github.com/wswebcreation/saucelabs-vusb-gui/issues).
 
 ### Why can't I see iOS devices, even though I have private iOS devices assigned to my account
-Virtual USB for iOS is in an early access mode. This app doesn't support that yet. Please contact your Sauce Labs Customer 
-Success Manager to learn more about VUSB for iOS.
+Virtual USB for iOS is in beta. You need to have two things to make this work:
+
+- be at least on version [`0.4.0`](https://github.com/wswebcreation/saucelabs-vusb-gui/releases/tag/0.4.0), go to
+**Settings** > **Server settings** > **SERVER VERSION** and select `Version 2.0-SNASHOT-5 !!iOS BETA!!`
+- use a Mac, because vUSB relies on XCODE which will not work on Windows.
+
+If that doesn't work I would advice you to contact your Sauce Labs Customer Success Manager.
 
 ### I'm getting al kinds of errors in my home screen telling me that `JAVA_HOME`, `ANDROID_HOME` and or `ADB` are not working
 Make sure you have set up your environment for using Android on your local machine. Use Google as your biggest friend.
@@ -119,7 +133,17 @@ No, this product is build by myself because I wanted to learn building Apps with
 simple UI for the Sauce Labs VUSB solution would be a nice project to start with.
 
 ### Why is the source code not provided
-The source code will be provided in a few months.
+The source code will be provided with the next major `1.0.0` release
+
+### Cannot open Sauce vUSB app on Big Sur
+You may see a failure opening Sauce vUSB on Big Sur. This can be fixed by:
+
+- opening a terminal 
+- run the following command:
+     
+      xattr -rd com.apple.quarantine /Applications/SauceVusbClient.app 
+
+Once done, this should let you open the Sauce vUSB GUI without any further issues.
 
 ### Cannot open Sauce vUSB app because it's "malicious software"
 When trying to open the application, you might get an error from Mac saying that you can't open this software because it's 
@@ -127,13 +151,7 @@ downloaded from an external source and could be malicious software.
 
 You can fix this by going to `System Preferences > Security & Privacy` and click on `Open Anyway`, see below
 
-![Open Anyway](docs/assets/mac-blocked.png) 
-
-You may still fail opening Sauce vUSB on Big Sur after the previous step. You may have to open a terminal and with the sudo command run the following command:
-
-     xattr -rd com.apple.quarantine /Applications/SauceVusbClient.app 
-
-Once done, this should let you open the Sauce vUSB GUI without any further issues.
+![Open Anyway](docs/assets/mac-blocked.png)
 
 ### XCODE/Safari doesn't recognise my just connected iOS device over vUSB
 You'll need to exit Xcode/Safari before connecting to an iOS Virtual USB session (or relaunch it after connecting). 
