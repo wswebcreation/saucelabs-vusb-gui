@@ -2,7 +2,7 @@
 This project is an Open Source Virtual USB GUI for Sauce Labs Virtual USB. It provides a simple GUI to start an Android 
 or iOS vUSB session with only a few clicks.
 
-> **NOTE:** This project has been deprecated because the app has moved to the Sauce Labs Open Source Repository which you can find [here](https://github.com/saucelabs/saucelabs-vusb-app). The new GUI, as of version [`1.0.1`](https://github.com/saucelabs/saucelabs-vusb-app/releases/tag/v1.0.1), can now connect to the Sauce Labs Real Device Cloud instead of the Legacy RDC (TestObject)-cloud.
+> **NOTE:** This project has been deprecated because the app has moved to the Sauce Labs Open Source Repository which you can find [here](https://github.com/saucelabs/saucelabs-vusb-app). The new GUI, as of version [`1.0.1`](https://github.com/saucelabs/saucelabs-vusb-app/releases/tag/v1.0.1), can now connect to the Sauce Labs Real Device Cloud instead of the Legacy RDC (TestObject)-cloud. Version [0.5.0](https://github.com/wswebcreation/saucelabs-vusb-gui/releases/tag/0.5.0) is the last supported version that works with the Legacy RDC.
 
 
 > **NOTE:**<br />
